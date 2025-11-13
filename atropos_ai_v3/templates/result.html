@@ -18,8 +18,12 @@
 document.getElementById('fb').addEventListener('submit', async (e)=>{
   e.preventDefault();
   const fd = new FormData(e.target);
+  
+  if (e.submitter && e.submitter.name) {
+    fd.set(e.submitter.name, e.submitter.value);
+  }
   const res = await fetch('/feedback', {method:'POST', body: fd});
-  if(res.ok) alert('Ελήφθη το feedback — ευχαριστώ!');
+  if (res.ok) alert('Ελήφθη το feedback — ευχαριστώ!');
 });
 </script>
 
