@@ -1,3 +1,6 @@
+![Exam Page](https://github.com/ImZaharias/atropos_ai_v3/blob/main/atropos.png)
+
+
 # 🧵 Atropos AI  
 ### Η σοφία που καθορίζει τον δρόμο σου  
 
